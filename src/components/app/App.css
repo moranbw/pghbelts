@@ -1,0 +1,28 @@
+.App {
+    /*text-align: center;*/
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    height: 100%
+}
+
+.App {
+    height: 100%;
+}
+
+.App-header {
+    height: 50px;
+}
+
+@font-face {
+    font-family: 'Gunplay';
+    src: url('../../assets/font/gunplay_rg-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../assets/font/gunplay_rg-webfont.woff2') format('woff2');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    font-weight: normal;
+    font-style: normal;
+}
