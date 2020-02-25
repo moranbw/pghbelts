@@ -14,9 +14,6 @@ const useStyles = makeStyles(theme => ({
     typography: {
         margin: theme.spacing(2),
     },
-    divStyle: {
-        //display: 'inline'
-    },
     fab: {
         margin: theme.spacing(1),
     }

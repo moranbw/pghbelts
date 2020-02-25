@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
 
 
 
-export default function ZoomControls(props) {
+export default function ZoomButtons(props) {
     const classes = useStyles();
     
     const zoomIn = () => {

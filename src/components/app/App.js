@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from '../map/Map';
+import Body from '../body/Body';
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import {CssBaseline} from "@material-ui/core";
 import {grey} from '@material-ui/core/colors';
@@ -28,7 +28,7 @@ function App() {
         <CssBaseline>
             <MuiThemeProvider theme={theme}>
                 <div className="App">
-                    <Map/>
+                    <Body/>
                 </div>
             </MuiThemeProvider>
         </CssBaseline>

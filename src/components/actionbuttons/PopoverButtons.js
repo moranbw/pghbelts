@@ -15,13 +15,12 @@ const useStyles = makeStyles(theme => ({
 ;
 
 
-export default function MapActionButtons(props) {
+export default function PopoverButtons(props) {
     const classes = useStyles();
     return (
         <div className={classes.iconContainer} >
             <OnMapPopover type="basemap" MapAPI={props.MapAPI}/>
             <OnMapPopover type="help"/>
-
         </div>
     );
 }
