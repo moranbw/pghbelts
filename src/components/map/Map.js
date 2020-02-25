@@ -1,14 +1,11 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core";
 import MapAPI from "../../service/MapAPI";
 import TopAppBar from '../topappbar/TopAppBar';
 import MapActionButtons from "../mapactionbuttons/MapActionButtons";
-import { makeStyles } from "@material-ui/core";
-import PropTypes from 'prop-types';
-
+import ZoomControls from "../zoom/ZoomControls";
 import "./Map.css";
 import "leaflet/dist/leaflet.css";
-import ZoomControls from "../zoom/ZoomControls";
-
 
 const useStyles = makeStyles(theme => ({
     mapParent: {
@@ -47,12 +44,6 @@ export default function Map() {
         leftDrawer: false,
     });
 
-    Map.propTypes = {
-        classes: PropTypes.object.isRequired,
-    };
-
-    const mapParent = React.createRef();
-
     React.useEffect(() => {
         let map = MapAPI.createMap();
         setState({ map: map, mapAPI: MapAPI });
@@ -62,7 +53,7 @@ export default function Map() {
     return (
         <div className={classes.root}>
             <TopAppBar MapAPI={state.mapAPI}/>
-            <div ref={mapParent} className={classes.mapParent}>
+            <div className={classes.mapParent}>
                 <div>
                     <ZoomControls MapAPI={state.mapAPI} />
                     <MapActionButtons MapAPI={state.mapAPI} leftDrawer={state.leftDrawer} />
